@@ -46,7 +46,7 @@ jobs:
            SSH_PRIVATE_KEY: ${{ secrets.MY_KEY }}
            ARGS: "-avz --delete"
           # 源目录
-           SOURCE: ""
+           SOURCE: "./build/"
           # 部署目标主机
            REMOTE_HOST: 47.115.62.230
           # 部署目标主机端口
@@ -54,4 +54,4 @@ jobs:
           # 登录用户
            REMOTE_USER: root
           # 部署目标目录
-           TARGET: "./site"
+           TARGET: "./build/"
