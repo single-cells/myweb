@@ -1,0 +1,11 @@
+2024.5.26引入了图标库:
+npm i bootstrap-icons
+
+2024.7.4引入:
+翻译
+npm install react-i18next i18next --save 
+
+css预编译
+npm install sass 
+
+

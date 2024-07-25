@@ -1,0 +1,66 @@
+.x-scroll-loop-3p {
+    animation: xscroll-3 16s forwards ease infinite normal;
+}
+
+@keyframes xscroll-3 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    5%{
+        transform: translate(-100%, 0%);
+    }
+
+    33% {
+        transform: translate(-100%, 0%);
+    }
+    38%{
+        transform: translate(-200%, 0%);
+    }
+
+    66% {
+        transform: translate(-200%, 0%);
+    }
+    71%{
+        transform: translate(-300%, 0%);
+    }
+
+    100% {
+        transform: translate(-300%, 0%);
+    }
+
+
+}
+@keyframes xscroll-4 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    3%{
+        transform: translate(-100%, 0%);
+    }
+    25%{
+        transform: translate(-100%, 0%);
+    }
+    28%{
+        transform: translate(-200%, 0%);
+    }
+
+    50% {
+        transform: translate(-200%, 0%);
+    }
+    53%{
+        transform: translate(-300%, 0%);
+    }
+
+    75% {
+        transform: translate(-300%, 0%);
+    }
+    78%{
+        transform: translate(-400%, 0%);
+    }
+
+    100% {
+        transform: translate(-400%, 0%);
+    }
+
+
+}

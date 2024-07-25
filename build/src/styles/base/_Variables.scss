@@ -1,0 +1,49 @@
+//颜色
+$color-bg: rgb(248, 254, 250);
+$color-dark: rgb(7, 59, 93);
+$color-white: rgb(251, 252, 252); //$color-semidark:rgb(248, 254, 250);
+
+$color-mid: rgb(42, 129, 118);
+$color-semilight: rgb(92, 167, 155);
+$color-light: rgb(229, 242, 234);
+$color-reversedark: rgb(254, 255, 254);
+$color-reverselight: rgb(18, 18, 18);
+
+//字体、大小、粗细、行高
+$font-size-smaller: 16px;
+$font-size-small: 18px;
+$font-size-middle: 20px;
+$font-size-large: 24px;
+$font-size-larger: 28px;
+
+$font-weight-thin: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-bolder: 600;
+$font-weight-bolder1: 600;
+$font-weight-bolder2: 700;
+$font-weight-bolder3: 800;
+
+
+//边框、圆角、阴影
+$border-size: 1px;
+$border-radius: 16px;
+$border-radius-small: 10px;
+
+
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//间距、尺寸
+$padding-little: 10px;
+$padding-normal: 20px;
+$padding-page: 50px;
+$padding-content-s: 10px;
+$padding-content-m: 1%;
+$padding-content-l: 1%;
+
+$size-min: 360px;
+$size-max: 1400px;
+//断点
+$breakpoint-mid: 800px;
+
+//z轴层级
+//动画时间

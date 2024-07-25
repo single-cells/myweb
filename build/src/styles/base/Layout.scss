@@ -1,0 +1,127 @@
+//排版
+.in-block {
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+//水平垂直布列
+.d-x-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.d-y-center {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.d-x-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.d-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+//水平垂直填充
+.x-full {
+
+    width: 100%;
+}
+
+.x-full-100p {
+    width: 100%;
+}
+
+
+.y-full {
+    height: 100%;
+}
+
+.all-full {
+    width: 100%;
+    height: 100%;
+}
+
+//sticky
+.sticky-top {
+    position: sticky;
+    top: -1px;
+}
+
+.sticking {
+    box-shadow: 0 3px 20px 2px rgb(231, 231, 231);
+    background-color: $color-white;
+}
+
+//常用边距
+.pad-y-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pad-page {
+    padding-left: $padding-page;
+    padding-right: $padding-page;
+}
+
+.pad-content {
+    padding: $padding-content-s $padding-little;
+}
+
+.pad-scroll {
+    padding: 0 $padding-normal;
+}
+
+
+//响应式
+.max-width {
+    max-width: $size-max;
+}
+
+.R-show {
+    display: none;
+}
+
+.R-show:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:$breakpoint-mid) {
+    .R-hidden {
+        display: none;
+    }
+
+    .R-show {
+        display: block;
+    }
+
+}
+
+//换行
+.nowrap {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+}
+
+.wrap {
+    flex-wrap: wrap;
+    white-space: wrap;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+
+}
