@@ -1,0 +1,57 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "single-cells-patch-1" ]
+  pull_request:
+    branches: [ "single-cells-patch-1" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: true
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        uses: easingthemes/ssh-deploy@main
+        with:
+          # SSH_PRIVATE_KEY: "-----BEGIN OPENSSH PRIVATE KEY-----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-----END OPENSSH PRIVATE KEY-----"
+          # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
+           SSH_PRIVATE_KEY: 
+           ARGS: "-avz --delete"
+          # 源目录
+           SOURCE: "./dist/"
+          # 部署目标主机
+           REMOTE_HOST: 47.115.62.230
+          # 部署目标主机端口
+           REMOTE_PORT: 22
+          # 登录用户
+           REMOTE_USER: root
+          # 部署目标目录
+           TARGET: "./site"
